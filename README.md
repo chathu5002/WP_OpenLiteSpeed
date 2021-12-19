@@ -1,4 +1,6 @@
-## Step 1: Install OpenLiteSpeed Web Server on Ubuntu
+# Step 1: Install OpenLiteSpeed Web Server
+
+## Ubuntu
 
 Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-secure-web-server/
 
