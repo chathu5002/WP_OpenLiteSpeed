@@ -14,11 +14,10 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 `sudo ufw default reject`
 `sudo ufw enable`
 
-
-
 ## Step 2: Install OpenLiteSpeed Web Server
 
 `wget -O - http://rpms.litespeedtech.com/debian/enable_lst_debian_repo.sh | sudo bash`
+
 `sudo apt update`
 
 `sudo apt install openlitespeed lsphp74`
