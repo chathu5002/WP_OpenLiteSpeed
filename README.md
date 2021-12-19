@@ -1,6 +1,8 @@
-## Ubuntu
+Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-secure-web-server/
 
-# Step 1: Configuring firewall rules
+# Ubuntu
+
+## Step 1: Configuring firewall rules
 
 ### Install ufw firewall
 
@@ -14,11 +16,7 @@
 
 
 
-# Step 2: Install OpenLiteSpeed Web Server
-
-Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-secure-web-server/
-
-## Ubuntu
+## Step 2: Install OpenLiteSpeed Web Server
 
 `wget -O - http://rpms.litespeedtech.com/debian/enable_lst_debian_repo.sh | sudo bash`
 `sudo apt update`
