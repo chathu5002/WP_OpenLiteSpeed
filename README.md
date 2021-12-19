@@ -1,6 +1,6 @@
-# WP_OpenLiteSpeed
+## Step 1: Install OpenLiteSpeed Web Server on Ubuntu
 
-https://upcloud.com/community/tutorials/install-openlitespeed-fast-secure-web-server/
+Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-secure-web-server/
 
 `wget -O - http://rpms.litespeedtech.com/debian/enable_lst_debian_repo.sh | sudo bash`
 `sudo apt update`
