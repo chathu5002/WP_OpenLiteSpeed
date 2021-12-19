@@ -24,7 +24,7 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 
 `sudo ln -sf /usr/local/lsws/lsphp74/bin/lsphp /usr/local/lsws/fcgi-bin/lsphp5`  
 
-### Step 3: Setting admin password
+## Step 3: Setting admin password
 
 `sudo /usr/local/lsws/admin/misc/admpass.sh` 
 
@@ -38,11 +38,17 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 `sudo firewall-cmd --add-port={8088/tcp,7080/tcp} --permanent`  
 `sudo firewall-cmd --reload`  
 
-## Step 2: Install OpenLiteSpeed Web Server
+## Step 2: Install OpenLiteSpeed Web Server and PHP
 
 `sudo rpm -Uvh http://rpms.litespeedtech.com/centos/litespeed-repo-1.1-1.el8.noarch.rpm`  
 `sudo dnf install epel-release`  
 `sudo dnf update`  
+`sudo dnf install openlitespeed lsphp74`  
 
-sudo dnf install openlitespeed lsphp74
+#### Create softlink for PHP
 
+`sudo ln -sf /usr/local/lsws/lsphp74/bin/lsphp /usr/local/lsws/fcgi-bin/lsphp5`  
+
+## Step 3: Setting admin password
+
+`sudo /usr/local/lsws/admin/misc/admpass.sh` 
