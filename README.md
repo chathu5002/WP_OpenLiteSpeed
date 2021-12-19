@@ -4,11 +4,11 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 
 ## Step 1: Configuring firewall rules
 
-### Install ufw firewall
+#### Install ufw firewall
 
 `sudo apt install ufw`
 
-### Then allow the following ports, set default rule to reject other connections and enable the firewall.
+#### Then allow the following ports, set default rule to reject other connections and enable the firewall.
 
 `sudo ufw allow 22,53,80,443,7080,8088/tcp`  
 `sudo ufw default reject`  
@@ -20,7 +20,7 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 `sudo apt update`  
 `sudo apt install openlitespeed lsphp74`  
 
-### Create softlink for PHP
+#### Create softlink for PHP
 
 `sudo ln -sf /usr/local/lsws/lsphp74/bin/lsphp /usr/local/lsws/fcgi-bin/lsphp5`  
 
