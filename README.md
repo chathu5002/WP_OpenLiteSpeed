@@ -16,11 +16,11 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 
 ## Step 2: Install OpenLiteSpeed Web Server
 
-`wget -O - http://rpms.litespeedtech.com/debian/enable_lst_debian_repo.sh | sudo bash`
-`sudo apt update`
-`sudo apt install openlitespeed lsphp74`
-`sudo ln -sf /usr/local/lsws/lsphp74/bin/lsphp /usr/local/lsws/fcgi-bin/lsphp5`
-`sudo /usr/local/lsws/admin/misc/admpass.sh`
+`wget -O - http://rpms.litespeedtech.com/debian/enable_lst_debian_repo.sh | sudo bash` 
+`sudo apt update` 
+`sudo apt install openlitespeed lsphp74` 
+`sudo ln -sf /usr/local/lsws/lsphp74/bin/lsphp /usr/local/lsws/fcgi-bin/lsphp5` 
+`sudo /usr/local/lsws/admin/misc/admpass.sh` 
 
 
 
