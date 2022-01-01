@@ -28,6 +28,54 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 
 `sudo /usr/local/lsws/admin/misc/admpass.sh` 
 
+## Step 4: Install MySQL Database Server
+
+`sudo apt-get install mysql-client mysql-server`
+
+##### Optional: Install MariaDB
+
+`sudo apt-get install mariadb-server mariadb-client`
+
+##### Optional: (Recommended) Run a security script to remove insecure default settings and protect the database system.
+
+`sudo mysql_secure_installation`
+
+###### Firstly, you will be asked to install the ‘validate_password’ plugin, so type in Y/Yes and press Enter and also choose the default password strength level.
+
+![alt text](https://github.com/chathu5002/WP_using_LAMP_stack/blob/main/Set-MySQL-Root-Password.png?raw=true)
+
+###### For the remaining questions, press Y and hit the ENTER key at each prompt.
+
+## Step 5: Install WordPress in Ubuntu
+
+#### Download and extract the latest version of the WordPress package.
+
+`wget -c http://wordpress.org/latest.tar.gz`  
+`tar -xzvf latest.tar.gz`
+
+#### Move the WordPress files from the extracted folder to the Apache default root directory, /var/www/html/:
+
+`sudo mv wordpress/* /var/www/html/`
+
+#### Set the correct permissions on the website directory, that is give ownership of the WordPress files to the webserver:
+
+`sudo chown -R www-data:www-data /var/www/html/`  
+`sudo chmod -R 755 /var/www/html/`
+
+## Step 6: Create WordPress Database
+
+#### Execute the command below and provide the root user password, then hit Enter to move to the mysql shell:
+
+`sudo mysql -u root -p`
+
+`CREATE DATABASE database_name;`  
+`CREATE USER 'username'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`  (MySQL)  
+`CREATE USER username IDENTIFIED BY '1234';`  (MariaDB)  
+`GRANT ALL ON wp_myblog.* TO 'username'@'%';`  (MySQL)  
+`GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' ;`  (MariaDB)  
+`FLUSH PRIVILEGES;`  
+`EXIT;`
+
 
 
 # CentOS
@@ -52,3 +100,22 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 ## Step 3: Setting admin password
 
 `sudo /usr/local/lsws/admin/misc/admpass.sh` 
+
+
+## Step 4: Install MySQL Database Server
+
+`sudo apt-get install mysql-client mysql-server`
+
+##### Optional: Install MariaDB
+
+`sudo apt-get install mariadb-server mariadb-client`
+
+##### Optional: (Recommended) Run a security script to remove insecure default settings and protect the database system.
+
+`sudo mysql_secure_installation`
+
+###### Firstly, you will be asked to install the ‘validate_password’ plugin, so type in Y/Yes and press Enter and also choose the default password strength level.
+
+![alt text](https://github.com/chathu5002/WP_using_LAMP_stack/blob/main/Set-MySQL-Root-Password.png?raw=true)
+
+###### For the remaining questions, press Y and hit the ENTER key at each prompt.
