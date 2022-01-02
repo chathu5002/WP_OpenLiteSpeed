@@ -53,16 +53,13 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 `wget -c http://wordpress.org/latest.tar.gz`  
 `tar -xzvf latest.tar.gz`
 
-#### Move the WordPress files from the extracted folder to the Apache default root directory, /var/www/html/:
+## Step 6: Host WordPress using default OLS virtual host
 
-`sudo mv wordpress/* /var/www/html/`
+#### Move the WordPress files from the extracted folder to the OLS default virtual host directory, /usr/local/lsws/Example/:
 
-#### Set the correct permissions on the website directory, that is give ownership of the WordPress files to the webserver:
+`sudo mv wordpress/* /usr/local/lsws/Example/`
 
-`sudo chown -R www-data:www-data /var/www/html/`  
-`sudo chmod -R 755 /var/www/html/`
-
-## Step 6: Create WordPress Database
+## Step 7: Create WordPress Database
 
 #### Execute the command below and provide the root user password, then hit Enter to move to the mysql shell:
 
@@ -71,7 +68,7 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 `CREATE DATABASE database_name;`  
 `CREATE USER 'username'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`  (MySQL)  
 `CREATE USER username IDENTIFIED BY '1234';`  (MariaDB)  
-`GRANT ALL ON wp_myblog.* TO 'username'@'%';`  (MySQL)  
+`GRANT ALL ON database_name.* TO 'username'@'%';`  (MySQL)  
 `GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' ;`  (MariaDB)  
 `FLUSH PRIVILEGES;`  
 `EXIT;`
