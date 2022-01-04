@@ -76,7 +76,7 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 ## Step 8: Obtaining SSL certificates
 
 `sudo apt install certbot`  
-`sudo certbot certonly --standalone -d <your-domain>`
+`sudo certbot certonly --standalone -d <your-domain>`  
 `sudo certbot certonly --non-interactive --agree-tos -m demo@gmail.com --webroot -w /usr/local/lsws/Example/wordpress -d <your-domain>`
 
 
