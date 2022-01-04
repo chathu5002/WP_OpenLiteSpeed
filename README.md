@@ -73,6 +73,12 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 `FLUSH PRIVILEGES;`  
 `EXIT;`
 
+sudo apt install certbot
+
+## Step 8: Obtaining SSL certificates
+
+`sudo apt install certbot`  
+`sudo certbot certonly --standalone -d <your-domain>`
 
 
 # CentOS
