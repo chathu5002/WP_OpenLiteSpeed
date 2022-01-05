@@ -81,7 +81,11 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 
 ## Step 9: Enabling HTTPS at the frontend
 
-After obtaining valid SSL certificates, change the listener's port to 443.
+After obtaining valid SSL certificates, make the following two changes to the default listener address settings:
+- Replace the port 8088 with 443
+- Select Secure: Yes
+
+
 
 # CentOS
 
