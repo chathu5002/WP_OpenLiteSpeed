@@ -87,5 +87,5 @@ After obtaining valid SSL certificates, make the following two changes to the de
 
 ![OLS-Default-Listener-General](/Images/OLS-Default-Listener-General.png)
 
-![OLS-Default-Listener-General-Edit](/Images/OLS-Default-Listener-General-Edit.png width="400" height="200" )
+<img src="/Images/OLS-Default-Listener-General-Edit.png" width="400" height="200">
 
