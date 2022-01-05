@@ -84,3 +84,7 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 After obtaining valid SSL certificates, make the following two changes to the default listener address settings:
 - Replace the port 8088 with 443
 - Select Secure: Yes
+
+![alt text](/Images/OLS-Default-Listener-General-Edit.png?raw=true)
+
+![alt text](/Images/OLS-Default-Listener-General.png?raw=true)
