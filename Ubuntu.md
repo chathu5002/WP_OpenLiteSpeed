@@ -42,7 +42,7 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 
 ###### Firstly, you will be asked to install the ‘validate_password’ plugin, so type in Y/Yes and press Enter and also choose the default password strength level.
 
-![alt text](https://github.com/chathu5002/WP_OpenLiteSpeed/Images/Set-MySQL-Root-Password.png?raw=true)
+![alt text](/Images/Set-MySQL-Root-Password.png?raw=true)
 
 ###### For the remaining questions, press Y and hit the ENTER key at each prompt.
 
