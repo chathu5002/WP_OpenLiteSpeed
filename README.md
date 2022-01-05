@@ -57,7 +57,7 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 
 #### Move the WordPress files from the extracted folder to the OLS default virtual host directory, /usr/local/lsws/Example/:
 
-`sudo mv wordpress/* /usr/local/lsws/Example/`
+`sudo mv wordpress/ /usr/local/lsws/Example/`
 
 ## Step 7: Create WordPress Database
 
