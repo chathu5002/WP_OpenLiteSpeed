@@ -77,8 +77,11 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 
 `sudo apt install certbot`  
 `sudo certbot certonly --standalone -d <your-domain>`  
-`sudo certbot certonly --non-interactive --agree-tos -m <your@email.com> --webroot -w /usr/local/lsws/Example/<virtual host> -d <your-domain>`
+`sudo certbot certonly --non-interactive --agree-tos -m <your@email.com> --webroot -w /usr/local/lsws/Example/<virtual host> -d <your-domain>`  
 
+## Step 9: Enabling HTTPS at the frontend
+
+After obtaining valid SSL certificates, change the listener's port to 443.
 
 # CentOS
 
