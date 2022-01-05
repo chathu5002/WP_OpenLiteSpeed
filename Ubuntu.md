@@ -42,7 +42,7 @@ Reference: https://upcloud.com/community/tutorials/install-openlitespeed-fast-se
 
 ###### Firstly, you will be asked to install the ‘validate_password’ plugin, so type in Y/Yes and press Enter and also choose the default password strength level.
 
-![alt text](/Images/Set-MySQL-Root-Password.png?raw=true)
+![Set-MySQL-Root-Password](/Images/Set-MySQL-Root-Password.png?raw=true)
 
 ###### For the remaining questions, press Y and hit the ENTER key at each prompt.
 
@@ -85,6 +85,7 @@ After obtaining valid SSL certificates, make the following two changes to the de
 - Replace the port 8088 with 443
 - Select Secure: Yes
 
-![alt text](/Images/OLS-Default-Listener-General-Edit.png?raw=true)
+![OLS-Default-Listener-General](/Images/OLS-Default-Listener-General.png)
 
-![alt text](/Images/OLS-Default-Listener-General.png?raw=true)
+![OLS-Default-Listener-General-Edit](/Images/OLS-Default-Listener-General-Edit.png?raw=true)
+
